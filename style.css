@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(195, 7, 7);
+    color: white;
+    padding: 10px;
+}
+
+.banner a:link, .banner a:visited {
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    padding: 20px;
+    padding-bottom: none;
+    color: purple;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    justify-content: space-around;
+}
+
+nav * {
+    cursor: pointer;
+}
+
+.sub--container {
+    display: flex;
+    gap: 1rem;
+}
+
+img {
+    height: auto;
+    width: 200px;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title--heading {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+table {
+    border: 10px solid rgba(214, 207, 201, 1);
+    border-collapse: collapse;
+    text-align: left;
+    display: block;
+    margin: auto;
+
+}
+th {
+    font-weight: 700;
+    background-color: rgba(106, 94, 82, 1);
+    color: white;
+}
+th, td {
+    border: 1px solid rgba(214, 207, 201, 1);
+    padding: 20px 10px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+th span, td span {
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.description--container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.description--container h2 {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.description--container a:link, .description--container a:visited {
+    color: black;
+}
+
+
+@media screen and (min-width: 768px){
+    main {
+        align-items: center;
+    }
+    table {
+        width: 100%;
+        max-width: 988px;
+    }
+
+    section {
+        width: 60%;
+        max-width: 988px;
+    }
+
+    th,td {
+        font-size: 18px;
+        line-height: 21.92px;
+    }
+    th span, td span {
+        font-size: 14px;
+        line-height: 17.05px;
+    }
+    tr td:last-child {
+        text-align: right;
+    }
+}
