@@ -127,9 +127,14 @@ section {
         max-width: 988px;
     }
 
+    tr {
+        border-bottom: 1px solid rgba(214, 207, 201, 1);
+    }
+
     th,td {
         font-size: 18px;
         line-height: 21.92px;
+        border: none;
     }
     th span, td span {
         font-size: 14px;
